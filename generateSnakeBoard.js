@@ -16,6 +16,7 @@ function generateBoard(num) {
                 board[i].push(counter);
                 counter++;
                 if(j % num == 0) {
+<<<<<<< HEAD
                     counter += num-1;
                     status = false;
                 }
@@ -24,6 +25,14 @@ function generateBoard(num) {
                 counter--;
                 if(j % num == 0) {
                     counter += num+1;
+=======
+                    status = false;
+                }
+            } else if(status == false) {
+                board[i].unshift(counter);
+                counter++;
+                if(j % num == 0) {
+>>>>>>> 0f59ef22491806b3eb37ac88ce2e2c19cd20ebb1
                     status = true;
                 }
             }
